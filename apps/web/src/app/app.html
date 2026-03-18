@@ -1,1 +1,13 @@
+<nav class="nav">
+    <div class="nav-left">
+        <a routerLink="/" class="logo">Nx Showcase</a>
+    </div>
+
+    <div class="nav-right">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a routerLink="/wizard" routerLinkActive="active">Wizard</a>
+        <a routerLink="/users" routerLinkActive="active">Users</a>
+    </div>
+</nav>
+
 <router-outlet></router-outlet>
