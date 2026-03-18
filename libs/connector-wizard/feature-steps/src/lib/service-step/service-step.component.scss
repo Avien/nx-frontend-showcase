@@ -1,0 +1,59 @@
+.step {
+  padding: 8px 0;
+}
+
+.title {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.subtitle {
+  margin: 0 0 14px;
+  opacity: 0.75;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: transform 80ms ease;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+}
+
+.card.selected {
+  border-color: #999;
+}
+
+.cardTitle {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cardDesc {
+  margin-top: 6px;
+  opacity: 0.8;
+}
+
+.check {
+  font-weight: 800;
+}
+
+.hint {
+  margin-top: 12px;
+  opacity: 0.75;
+  font-size: 13px;
+}

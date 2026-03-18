@@ -1,0 +1,38 @@
+<section class="step">
+    @if(facade.$vm().loading){
+        <p>Loading services...</p>
+    } @else if (facade.$vm(); as vm) {
+        <h2 class="title">Choose a service</h2>
+        <p class="subtitle">Select which connector you’d like to configure.</p>
+
+        <div class="list" role="list">
+            @for (connector of vm.connectors; track connector.id) {
+                <button
+                        class="card"
+                        role="listitem"
+                        type="button"
+                        (click)="facade.selectService(connector.id)"
+                        [class.selected]="vm.selectedServiceId === connector.id"
+                        [attr.aria-pressed]="vm.selectedServiceId === connector.id"
+                >
+                    <div class="cardTitle">
+                        <span>{{ connector.title }}</span>
+                        @if (vm.selectedServiceId === connector.id) {
+                            <span class="check">✓</span>
+                        }
+                    </div>
+
+                    @if (connector.description) {
+                        <div class="cardDesc">
+                            {{ connector.description }}
+                        </div>
+                    }
+                </button>
+            }
+        </div>
+
+        @if (!vm.selectedServiceId) {
+            <p class="hint">Pick a service to continue.</p>
+        }
+    }
+</section>

@@ -1,0 +1,31 @@
+<section class="shell">
+    @if (facade.$vm(); as vm) {
+        <header class="header">
+            <div>
+                <h1 class="title">Connector Wizard</h1>
+                <div class="subtitle">
+                    Step: <b>{{ vm.step}}</b>
+                    <span class="dot">•</span>
+                    Selected: <b>{{ vm.selectedServiceId ?? 'none' }}</b>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <router-outlet></router-outlet>
+        </main>
+
+        @if(vm.error) {
+            <div class="error">{{ vm.error }}</div>
+        }
+        <footer class="footer">
+            <button type="button" class="btn" (click)="facade.back()" [disabled]="!vm.canGoBack">
+                Back
+            </button>
+
+            <button type="button" class="btn primary" (click)="facade.next()" [disabled]="!vm.canProceed">
+                {{ vm.nextLabel }}
+            </button>
+        </footer>
+    }
+</section>

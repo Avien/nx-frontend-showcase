@@ -1,0 +1,59 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": false,
+    "target": "es2022",
+    "module": "preserve",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@nx-frontend-showcase/connector-wizard/data-access": [
+        "libs/connector-wizard/data-access/src/index.ts"
+      ],
+      "@nx-frontend-showcase/connector-wizard/feature-shell": [
+        "libs/connector-wizard/feature-shell/src/index.ts"
+      ],
+      "@nx-frontend-showcase/connector-wizard/feature-steps": [
+        "libs/connector-wizard/feature-steps/src/index.ts"
+      ],
+      "@nx-frontend-showcase/connector-wizard/feature-steps/auth-step": [
+        "libs/connector-wizard/feature-steps/auth-step/index.ts"
+      ],
+      "@nx-frontend-showcase/connector-wizard/feature-steps/review-step": [
+        "libs/connector-wizard/feature-steps/review-step/index.ts"
+      ],
+      "@nx-frontend-showcase/connector-wizard/feature-steps/scopes-step": [
+        "libs/connector-wizard/feature-steps/scopes-step/index.ts"
+      ],
+      "@nx-frontend-showcase/connector-wizard/feature-steps/service-step": [
+        "libs/connector-wizard/feature-steps/service-step/index.ts"
+      ],
+      "@nx-frontend-showcase/connector-wizard/model": [
+        "libs/connector-wizard/model/src/index.ts"
+      ],
+      "@nx-frontend-showcase/connector-wizard/util": [
+        "libs/connector-wizard/util/src/index.ts"
+      ],
+      "@nx-frontend-showcase/users/data-access": [
+        "libs/users/data-access/src/index.ts"
+      ],
+      "@nx-frontend-showcase/users/feature-shell": [
+        "libs/users/feature-shell/src/index.ts"
+      ],
+      "@nx-frontend-showcase/users/model": [
+        "libs/users/model/src/index.ts"
+      ],
+      "@nx-frontend-showcase/users/ui": [
+        "libs/users/ui/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}
