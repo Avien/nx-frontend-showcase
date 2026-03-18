@@ -2,6 +2,10 @@
 
 A feature-driven Angular/Nx workspace demonstrating scalable frontend architecture patterns.
 
+🔗 **Live Demo:** https://nx-frontend-showcase.vercel.app
+
+[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://nx-frontend-showcase.vercel.app)
+
 ## Overview
 
 This project showcases how to structure a frontend application using Nx with clear separation of concerns and feature-based organization.
@@ -11,6 +15,13 @@ It includes two independent feature areas:
 * **Connector Wizard** — a multi-step flow with guarded navigation and route-based orchestration
 * **Users Directory** — a server-driven list demonstrating pagination, search, and performance considerations
 
+
+## 🌐 Try it
+
+- Home: https://nx-frontend-showcase.vercel.app
+- Wizard: https://nx-frontend-showcase.vercel.app/wizard
+- Users: https://nx-frontend-showcase.vercel.app/users
+- 
 ---
 
 ## Key Highlights
